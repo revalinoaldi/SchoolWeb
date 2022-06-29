@@ -18,8 +18,23 @@ class M_setting extends CI_Model {
         $this->db->update('tbl_setting', $data);
     }
 
-    public function pendaftaran()
+    public function save_informasi($data,$action)
     {
+      if ($action == "update") {
+        $this->db->where('id', $data['id']);
+        $this->db->update('tbl_informasi', $data);
+      }else{
+        $this->db->insert('tbl_informasi', $data);
+      }
+
+      return $this->db->affected_rows() > 0 ? true : false;
+    }
+
+    public function pendaftaran($id = '')
+    {
+      if (@$id) {
+        $this->db->where('id', $id);
+      }
       return $this->db->get('tbl_informasi', 1, 0);
     }
 

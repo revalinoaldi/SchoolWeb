@@ -1,5 +1,5 @@
 <?php
-echo form_open_multipart('admin/setting');
+echo form_open_multipart('admin/pendaftaran');
 
 if ($this->session->flashdata('pesan')) {
     echo '<div class="alert alert-success alert-dismissible">
@@ -10,7 +10,7 @@ if ($this->session->flashdata('pesan')) {
 ?>
 <div class="col-sm-4">
     <label for="">Informasi Pendaftaran</label><br>
-    <img src="<?= base_url('brosur/'.@$setting->brosur_img) ?>" class="img-fluid rounded col-sm-12 mb-4"  id="avatarPreview">
+    <img src="<?= base_url('informasi_pendaftaran/'.@$setting->brosur_img) ?>" class="img-fluid rounded col-sm-12 mb-4"  id="avatarPreview">
     <br>
 
     <div class="form-group mt-5">
@@ -23,7 +23,7 @@ if ($this->session->flashdata('pesan')) {
 <div class="col-sm-8">
     <div class="form-group">
         <label>Title</label>
-        <input type="text" class="form-control" value="<?= @$setting->title ?>" type="text" name="title">
+        <input type="text" class="form-control" value="<?= @$setting->title ?>" type="text" name="title" required>
     </div>
 </div>
 

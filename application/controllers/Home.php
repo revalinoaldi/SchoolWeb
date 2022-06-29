@@ -9,6 +9,7 @@ class Home extends CI_Controller {
         parent::__construct();
         $this->load->model('m_home');
         $this->load->model('m_setting');
+        $this->load->helper('download');
     }
  
     public function index()
@@ -161,14 +162,19 @@ class Home extends CI_Controller {
         $this->load->view('layout/v_wrapper',$data,FALSE);
     }
 
-    public function informasi_pendaftaran()
+    public function informasipendaftaran()
     {
         $data = array(
             'title' => 'Daftar',
-            'daftar' => $this->m_setting->detail(),
+            'info' => $this->m_setting->pendaftaran()->row(),
             'isi'   => 'v_informasi_pendaftaran'
         );
         $this->load->view('layout/v_wrapper',$data,FALSE);
+    }
+
+    public function downloadinformasipendaftaran($files)
+    {
+        force_download('informasi_pendaftaran/'.$files, NULL);
     }
 }
 
