@@ -1,7 +1,7 @@
 <!-- Footer -->
 
 <footer class="footer">
-	<div class="footer_background" style="background-image:url(<?= base_url() ?>template/front-end/images/footer_background.png)"></div>
+	<div class="footer_background"></div>
 	<div class="container">
 		<div class="row footer_row">
 			<div class="col">
