@@ -80,9 +80,9 @@
                                 </div> -->
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <a href="<?= base_url('pengumuman') ?>"><i class="fa fa-bell fa-fw"></i> Pengumuman</a>
-                            </li>
+                            </li> -->
 
                             <li>
                                 <a href="<?= base_url('berita') ?>"><i class="fa fa-newspaper-o fa-fw"></i> Berita</a>
@@ -102,6 +102,10 @@
 
                             <li>
                                 <a href="<?= base_url('admin/setting') ?>"><i class="fa fa-gear fa-fw"></i> Setting</a>
+                            </li>
+
+                            <li>
+                                <a href="<?= base_url('admin/profile') ?>"><i class="fa fa-gear fa-fw"></i> Update Profile</a>
                             </li>
 
                             <li class="active">

@@ -13,7 +13,7 @@ $nowUrl = $url[max(array_keys($url))];
 					<div class="logo_container">
 						<a href="<?= base_url() ?>">
 								
-                                <div class="logo_text" style="font-size: 25px !important"><span>SD Negeri Utan Kayu Selatan 18 Pagi <?= $nowUrl  ?></span></div>
+                                <div class="logo_text" style="font-size: 25px !important"><span>SD Negeri Utan Kayu Selatan 18 Pagi</span></div>
                             </a>
                         </div>
                         <nav class="main_nav_contaner ml-auto">
@@ -29,14 +29,14 @@ $nowUrl = $url[max(array_keys($url))];
                         				<div class="dropdown-menu" style="font-size: 12px !important" aria-labelledby="navbarDropdown">
                         					<a class="dropdown-item <?= ($nowUrl == "sejarah" ? 'active' : ''); ?>" style="font-size: 12px !important" href="<?= base_url('home/sejarah') ?>">Sejarah Sekolah</a>
                         					<a class="dropdown-item <?= ($nowUrl == "visi_misi" ? 'active' : ''); ?>" style="font-size: 12px !important" href="<?= base_url('home/visi_misi') ?>">Visi & Misi</a>
-                        					<a class="dropdown-item <?= ($nowUrl == "fasilitas" ? 'active' : ''); ?>" style="font-size: 12px !important" href="<?= base_url('home/fasilitas') ?>">Fasilitas</a>
+                        					<a class="dropdown-item <?= ($nowUrl == "video" ? 'active' : ''); ?>" style="font-size: 12px !important" href="<?= base_url('home/video') ?>">Video</a>
                         					<a class="dropdown-item <?= ($nowUrl == "gallery" ? 'active' : ''); ?>" style="font-size: 12px !important" href="<?= base_url('home/gallery') ?>">Gallery</a>
                         				</div>
                         			</li>
 
                         			<li class="<?= ($nowUrl == "berita" ? 'active' : ''); ?>"><a style="font-size: 12px !important" href="<?= base_url('home/berita') ?>">Berita</a></li>
 
-                        			<li class="<?= ($nowUrl == "video" ? 'active' : ''); ?>"><a style="font-size: 12px !important" href="<?= base_url('home/video') ?>">Video</a></li>
+                        			<li class="<?= ($nowUrl == "fasilitas" ? 'active' : ''); ?>"><a style="font-size: 12px !important" href="<?= base_url('home/fasilitas') ?>">Fasilitas</a></li>
                         			<li class="<?= ($nowUrl == "informasipendaftaran" ? 'active' : ''); ?>"><a style="font-size: 12px !important" href="<?= base_url('home/informasipendaftaran') ?>">Informasi Pendaftaran</a></li>
                         			<li class="<?= ($nowUrl == "kontak" ? 'active' : ''); ?>"><a style="font-size: 12px !important" href="<?= base_url('home/kontak') ?>">Kontak</a></li>
                         		</ul>

@@ -20,14 +20,6 @@
 								<div class="footer_about_text">
 									<p>SD NEGERI UTAN KAYU SELATAN 18 PAGI</p>
 								</div>
-								<div class="footer_social">
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
 							</div>
 							
 						</div>
@@ -36,11 +28,11 @@
 							
 							<!-- Footer Contact -->
 							<div class="footer_section footer_contact">
-								<div class="footer_title">Contact Us</div>
+								<div class="footer_title">Kontak</div>
 								<div class="footer_contact_info">
 									<ul>
-										<li>Email: Info.deercreative@gmail.com</li>
-										<li>Phone:  (021) 85912959</li>
+										<li>Email: info@sdnukselatan18pagi.com</li>
+										<li>No Telp:  (021) 85912959</li>
 										<li>Jl. Klp. Hijau No.30, RT.2/RW.13, Utan Kayu Sel., Kec. Matraman, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13120</li>
 									</ul>
 								</div>
@@ -52,7 +44,7 @@
 							
 							<!-- Footer links -->
 							<div class="footer_section footer_links">
-								<div class="footer_title">Contact Us</div>
+								<div class="footer_title">Daftar Menu</div>
 								<div class="footer_links_container">
 									<ul>
 										<li><a href="<?= base_url() ?>">Home</a></li>
@@ -77,22 +69,16 @@
 		</div>
 
 		<div class="row copyright_row">
-			<div class="col">
+			<div class="col text-center">
 				<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
-					<div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-						<div class="ml-lg-auto cr_links">
-							<ul class="cr_list">
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
+					<div class="cr_text">
+						Copyright &copy; SDN NEGERI UTAN KAYU SELATAN 18 PAGI
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 </div>
 
 <script src="<?= base_url() ?>template/front-end/js/jquery-3.2.1.min.js"></script>

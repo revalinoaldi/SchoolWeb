@@ -43,10 +43,9 @@
             <div class="form-group">
                 <label>Jenis Kelamin</label>
                 <select name="jenis_kelamin" class="form-control">
-                    <option value="<?= $kelas6->kelas ?>"><?= $kelas6->kelas ?></option>
                     <option value="">--Pilih Jenis Kelamin--</option>
-                    <option value="Laki-Laki">Laki-Laki</option>
-                    <option value="Perempuan">Perempuan</option>
+                    <option <?= $kelas6->jenis_kelamin == "Laki-Laki" ? "selected=''" : "" ?> value="Laki-Laki">Laki-Laki</option>
+                    <option <?= $kelas6->jenis_kelamin == "Perempuan" ? "selected=''" : "" ?> value="Perempuan">Perempuan</option>
                 </select>
             </div>
             </div>
@@ -65,12 +64,7 @@
                 <select name="kelas" class="form-control">
                     <option value="<?= $kelas6->kelas ?>"><?= $kelas6->kelas ?></option>
                     <option value="">--Pilih Kelas--</option>
-                    <option value="I">I</option>
-                    <option value="II">II</option>
-                    <option value="III">III</option>
-                    <option value="IV">IV</option>
-                    <option value="V">V</option>
-                    <option value="VI">VI</option>
+                    <option value="VI" selected="">VI</option>
                 </select>
             </div>
             </div>

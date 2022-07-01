@@ -8,7 +8,7 @@ $setting=$this->m_setting->detail();
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><?=$title ?></a>
+                    <a class="navbar-brand" href="#"><?=$title ?></a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

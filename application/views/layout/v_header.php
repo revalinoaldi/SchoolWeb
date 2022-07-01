@@ -17,14 +17,13 @@ $setting=$this->m_setting->detail();
 						<div class="col">
 							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
 								<ul class="top_bar_contact_list">
-									<li><div class="question">Have any questions?</div></li>
 									<li>
 										<i class="fa fa-phone" aria-hidden="true"></i>
-										<div>001-1234-88888</div>
+										<div>(021) 85912959</div>
 									</li>
 									<li>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
-										<div>info.deercreative@gmail.com</div>
+										<div>info@sdnukselatan18pagi.com</div>
 									</li>
 								</ul>
 								<div class="top_bar_login ml-auto">

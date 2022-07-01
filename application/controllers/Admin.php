@@ -139,6 +139,40 @@ class Admin extends CI_Controller {
         );
         $this->load->view('admin/layout/v_wrapper',$data,FALSE);
     }
+
+    public function profile($username='')
+    {
+        $this->form_validation->set_rules('nama_user', 'Nama User', 'required');
+        $this->form_validation->set_rules('username', 'Username', 'required');
+
+        if ($this->form_validation->run() == TRUE) {
+
+            $data = array(
+                'nama_user' => $this->input->post('nama_user'),
+                'username'  => $this->input->post('username'),
+            );
+            if (@$this->input->post('password')) {
+                $data['password'] = $this->input->post('password');
+            }
+            $this->db->where('id_user', $this->input->post('id'));
+            $this->db->update('tbl_user', $data);
+
+            if ($this->db->affected_rows() > 0) {
+                $this->session->set_userdata( $data );
+            }
+
+            $this->session->set_flashdata('pesan', 'User Update Telah Dirubah.');
+            redirect('admin/profile');
+        }
+
+        $data = array(
+            'title' => 'SD Negeri Utan Kayu Selatan 18 Pagi',
+            'title2' => 'Setting Web Sekolah',
+            'user' => (object) $this->session->all_userdata(),
+            'isi'   => 'admin/profile'
+        );
+        $this->load->view('admin/layout/v_wrapper',$data,FALSE);
+    }
 }
 
 /* End of file Admin.php */
